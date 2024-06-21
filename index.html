@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quicktasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo"><img src="icons/logo.svg" alt="quicktasks logo" /></div>
+      </nav>
+    </header>
+    <main>
+      <section id="options">
+        <button class="btn-primary">New category</button>
+        <div class="input-group">
+          <input type="checkbox" name="hide-done-tasks" id="hide-done-tasks" />
+          <label for="hide-done-tasks">Hide done tasks</label>
+        </div>
+      </section>
+      <section id="category-list">
+        <div class="category-card">
+          <div class="category-label green">🎓 university</div>
+          <a href="" class="category-edit-btn"
+            ><img src="icons/edit-icon.svg" alt="Edit"
+          /></a>
+          <ul class="category-todos-list">
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">study for midterms</p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">finish final art class project</p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">
+                return book to the library before 6pm
+              </p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+          </ul>
+          <a href="" class="category-new-task-btn">+ New task</a>
+        </div>
+        <div class="category-card">
+          <div class="category-label purple">🏠 house</div>
+          <a href="" class="category-edit-btn"
+            ><img src="icons/edit-icon.svg" alt="Edit"
+          /></a>
+          <ul class="category-todos-list">
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">buy groceries</p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">do the laundry</p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+            <li class="category-todo">
+              <input type="checkbox" />
+              <p class="category-todo-text">plant flowers in the garden</p>
+              <a href=""><img src="icons/ellipsis-icon.svg" alt="" /></a>
+            </li>
+          </ul>
+          <a href="" class="category-new-task-btn">+ New task</a>
+        </div>
+        <div class="category-card">
+          <div class="category-label yellow">New category</div>
+          <a href="" class="category-edit-btn"
+            ><img src="icons/edit-icon.svg" alt="Edit"
+          /></a>
+          <ul class="category-todos-list"></ul>
+          <a href="" class="category-new-task-btn">+ New task</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

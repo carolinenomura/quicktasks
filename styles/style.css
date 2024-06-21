@@ -1,0 +1,163 @@
+:root {
+  --dark-color: #21274a;
+}
+
+.green {
+  background: rgb(186, 251, 169);
+  background: linear-gradient(
+    180deg,
+    rgba(186, 251, 169, 1) 0%,
+    rgba(152, 232, 139, 1) 100%
+  );
+}
+
+.purple {
+  background: rgb(190, 201, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(190, 201, 255, 1) 0%,
+    rgba(159, 174, 253, 1) 100%
+  );
+}
+
+.pink {
+  background: rgb(254, 204, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 204, 219, 1) 0%,
+    rgba(255, 175, 199, 1) 100%
+  );
+}
+
+.yellow {
+  background: rgb(255, 225, 148);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 225, 148, 1) 0%,
+    rgba(255, 212, 101, 1) 100%
+  );
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+nav #logo {
+  margin-left: 120px;
+}
+
+main {
+  width: 640px;
+
+  margin: 0 auto;
+}
+
+main #options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+main #options .btn-primary {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+main #options .input-group {
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+}
+
+main #options .input-group label {
+  color: var(--dark-color);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+main .category-card {
+  background-color: #f9f9f9;
+  margin-bottom: 35px;
+  border-radius: 28px;
+  padding: 20px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+main .category-card .category-label {
+  padding: 12px 15px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+main .category-card .category-edit-btn {
+  float: right;
+}
+
+main .category-card .category-todos-list {
+  margin-bottom: 15px;
+}
+
+main .category-card .category-todo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.1s;
+}
+
+main .category-card .category-todo:hover {
+  background-color: #efefef;
+}
+
+main .category-card .category-todo:last-of-type {
+  margin-bottom: 0;
+}
+
+main .category-card .category-todo input {
+  margin-right: 12px;
+}
+
+main .category-card .category-todo-text {
+  color: #232323;
+}
+
+main .category-card .category-todo a {
+  margin-left: auto;
+}
+
+main .category-card .category-todo img {
+  display: block;
+}
+
+main .category-card .category-new-task-btn {
+  color: #888888;
+  padding-left: 30px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
