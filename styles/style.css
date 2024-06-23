@@ -118,8 +118,11 @@ main .category-card .category-label {
   margin-bottom: 22px;
 }
 
-main .category-card .category-edit-btn {
+main .category-card .edit-category-btn {
   float: right;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 main .category-card .todo-list {
@@ -148,8 +151,12 @@ main .category-card .todo .todo-text {
   margin-left: 12px;
 }
 
-main .category-card .todo a {
+main .category-card .todo .todo-options-btn {
   margin-left: auto;
+  border: none;
+  background: none;
+  padding: 5px;
+  cursor: pointer;
 }
 
 main .category-card .todo img {
@@ -161,10 +168,13 @@ main .category-card .todo.done .todo-text {
   text-decoration: line-through;
 }
 
-main .category-card .new-task-btn {
+main .category-card .new-todo-btn {
   color: #888888;
-  padding-left: 30px;
+  margin-left: 30px;
   display: inline-block;
   margin-bottom: 5px;
   font-size: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }

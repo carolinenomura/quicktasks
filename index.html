@@ -25,66 +25,96 @@
       <section class="options">
         <button id="new-category-btn">New category</button>
         <div class="form-group">
-          <input type="checkbox" name="hide-done-tasks" id="hide-done-tasks" />
-          <label for="hide-done-tasks">Hide done tasks</label>
+          <input type="checkbox" name="hide-done-todos" id="hide-done-todos" />
+          <label for="hide-done-todos">Hide done tasks</label>
         </div>
       </section>
       <section class="category-list">
         <div class="category-card">
           <div class="category-label green">🎓 university</div>
-          <a href="" class="category-edit-btn"
-            ><img src="assets/icons/edit-icon.svg" alt="Edit"
-          /></a>
+          <button class="edit-category-btn">
+            <img src="assets/icons/edit-icon.svg" alt="Edit category button" />
+          </button>
           <ul class="todo-list">
             <li class="todo">
               <input type="checkbox" />
               <p class="todo-text">study for midterms</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
             <li class="todo done">
               <input type="checkbox" checked />
               <p class="todo-text">finish final art class project</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
             <li class="todo">
               <input type="checkbox" />
               <p class="todo-text">return book to the library before 6pm</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
           </ul>
-          <a href="" class="new-task-btn">+ New task</a>
+          <button class="new-todo-btn">+ New task</button>
         </div>
         <div class="category-card">
           <div class="category-label purple">🏠 house</div>
-          <a href="" class="category-edit-btn"
-            ><img src="assets/icons/edit-icon.svg" alt="Edit"
-          /></a>
+          <button class="edit-category-btn">
+            <img src="assets/icons/edit-icon.svg" alt="Edit category button" />
+          </button>
           <ul class="todo-list">
             <li class="todo">
               <input type="checkbox" />
               <p class="todo-text">buy groceries</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
             <li class="todo">
               <input type="checkbox" />
               <p class="todo-text">do the laundry</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
             <li class="todo">
               <input type="checkbox" />
               <p class="todo-text">plant flowers in the garden</p>
-              <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
+              <button class="todo-options-btn">
+                <img
+                  src="assets/icons/ellipsis-icon.svg"
+                  alt="Task options button"
+                />
+              </button>
             </li>
           </ul>
-          <a href="" class="new-task-btn">+ New task</a>
+          <button class="new-todo-btn">+ New task</button>
         </div>
         <div class="category-card">
           <div class="category-label yellow">New category</div>
-          <a href="" class="category-edit-btn"
-            ><img src="assets/icons/edit-icon.svg" alt="Edit"
-          /></a>
+          <button class="edit-category-btn">
+            <img src="assets/icons/edit-icon.svg" alt="Edit category button" />
+          </button>
           <ul class="todo-list"></ul>
-          <a href="" class="new-task-btn">+ New task</a>
+          <button class="new-todo-btn">+ New task</button>
         </div>
       </section>
     </main>
