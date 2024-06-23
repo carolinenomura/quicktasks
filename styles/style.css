@@ -135,20 +135,17 @@ main .category-card .todo {
   transition: background-color 0.1s;
 }
 
-main .category-card .todo:hover {
-  background-color: #efefef;
-}
-
 main .category-card .todo:last-of-type {
   margin-bottom: 0;
 }
 
-main .category-card .todo input {
-  margin-right: 12px;
+main .category-card .todo:hover {
+  background-color: #efefef;
 }
 
-main .category-card .todo-text {
+main .category-card .todo .todo-text {
   color: #232323;
+  margin-left: 12px;
 }
 
 main .category-card .todo a {
@@ -159,15 +156,15 @@ main .category-card .todo img {
   display: block;
 }
 
+main .category-card .todo.done .todo-text {
+  color: #888888;
+  text-decoration: line-through;
+}
+
 main .category-card .new-task-btn {
   color: #888888;
   padding-left: 30px;
   display: inline-block;
   margin-bottom: 5px;
   font-size: 14px;
-}
-
-main .category-card .todo.done .todo-text {
-  color: #888888;
-  text-decoration: line-through;
 }
