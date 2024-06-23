@@ -65,13 +65,13 @@ main {
   margin: 0 auto;
 }
 
-main #options {
+main .options {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
 }
 
-main #options .btn-primary {
+main .options #new-category-btn {
   padding: 12px 20px;
   border: none;
   border-radius: 15px;
@@ -79,15 +79,20 @@ main #options .btn-primary {
   color: #fff;
   font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-main #options .input-group {
+main .options #new-category-btn:hover {
+  background-color: rgb(28, 30, 58);
+}
+
+main .options .form-group {
   display: inline-block;
   align-self: center;
   cursor: pointer;
 }
 
-main #options .input-group label {
+main .options .form-group label {
   color: var(--dark-color);
   margin-left: 5px;
   cursor: pointer;
@@ -117,11 +122,11 @@ main .category-card .category-edit-btn {
   float: right;
 }
 
-main .category-card .category-todos-list {
+main .category-card .todo-list {
   margin-bottom: 15px;
 }
 
-main .category-card .category-todo {
+main .category-card .todo {
   display: flex;
   align-items: center;
   padding: 10px 20px 10px 30px;
@@ -130,34 +135,39 @@ main .category-card .category-todo {
   transition: background-color 0.1s;
 }
 
-main .category-card .category-todo:hover {
+main .category-card .todo:hover {
   background-color: #efefef;
 }
 
-main .category-card .category-todo:last-of-type {
+main .category-card .todo:last-of-type {
   margin-bottom: 0;
 }
 
-main .category-card .category-todo input {
+main .category-card .todo input {
   margin-right: 12px;
 }
 
-main .category-card .category-todo-text {
+main .category-card .todo-text {
   color: #232323;
 }
 
-main .category-card .category-todo a {
+main .category-card .todo a {
   margin-left: auto;
 }
 
-main .category-card .category-todo img {
+main .category-card .todo img {
   display: block;
 }
 
-main .category-card .category-new-task-btn {
+main .category-card .new-task-btn {
   color: #888888;
   padding-left: 30px;
   display: inline-block;
   margin-bottom: 5px;
   font-size: 14px;
+}
+
+main .category-card .todo.done .todo-text {
+  color: #888888;
+  text-decoration: line-through;
 }

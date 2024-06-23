@@ -22,73 +22,72 @@
       </nav>
     </header>
     <main>
-      <section id="options">
-        <button class="btn-primary">New category</button>
-        <div class="input-group">
+      <section class="options">
+        <button id="new-category-btn">New category</button>
+        <div class="form-group">
           <input type="checkbox" name="hide-done-tasks" id="hide-done-tasks" />
           <label for="hide-done-tasks">Hide done tasks</label>
         </div>
       </section>
-      <section id="category-list">
+      <section class="category-list">
         <div class="category-card">
           <div class="category-label green">🎓 university</div>
           <a href="" class="category-edit-btn"
             ><img src="assets/icons/edit-icon.svg" alt="Edit"
           /></a>
-          <ul class="category-todos-list">
-            <li class="category-todo">
+          <ul class="todo-list">
+            <li class="todo">
               <input type="checkbox" />
-              <p class="category-todo-text">study for midterms</p>
+              <p class="todo-text">study for midterms</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
-            <li class="category-todo">
-              <input type="checkbox" />
-              <p class="category-todo-text">finish final art class project</p>
+            <li class="todo done">
+              <input type="checkbox" checked />
+              <p class="todo-text">finish final art class project</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
-            <li class="category-todo">
+            <li class="todo">
               <input type="checkbox" />
-              <p class="category-todo-text">
-                return book to the library before 6pm
-              </p>
+              <p class="todo-text">return book to the library before 6pm</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
           </ul>
-          <a href="" class="category-new-task-btn">+ New task</a>
+          <a href="" class="new-task-btn">+ New task</a>
         </div>
         <div class="category-card">
           <div class="category-label purple">🏠 house</div>
           <a href="" class="category-edit-btn"
             ><img src="assets/icons/edit-icon.svg" alt="Edit"
           /></a>
-          <ul class="category-todos-list">
-            <li class="category-todo">
+          <ul class="todo-list">
+            <li class="todo">
               <input type="checkbox" />
-              <p class="category-todo-text">buy groceries</p>
+              <p class="todo-text">buy groceries</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
-            <li class="category-todo">
+            <li class="todo">
               <input type="checkbox" />
-              <p class="category-todo-text">do the laundry</p>
+              <p class="todo-text">do the laundry</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
-            <li class="category-todo">
+            <li class="todo">
               <input type="checkbox" />
-              <p class="category-todo-text">plant flowers in the garden</p>
+              <p class="todo-text">plant flowers in the garden</p>
               <a href=""><img src="assets/icons/ellipsis-icon.svg" alt="" /></a>
             </li>
           </ul>
-          <a href="" class="category-new-task-btn">+ New task</a>
+          <a href="" class="new-task-btn">+ New task</a>
         </div>
         <div class="category-card">
           <div class="category-label yellow">New category</div>
           <a href="" class="category-edit-btn"
             ><img src="assets/icons/edit-icon.svg" alt="Edit"
           /></a>
-          <ul class="category-todos-list"></ul>
-          <a href="" class="category-new-task-btn">+ New task</a>
+          <ul class="todo-list"></ul>
+          <a href="" class="new-task-btn">+ New task</a>
         </div>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
